@@ -8,11 +8,25 @@ namespace UpmeetEventBackend.Controllers
     [ApiController]
     public class EventController : ControllerBase
     {
+        private ApplicationDbContext _context;
+
+        public EventController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
         [HttpGet("GetAllEvents")]
         public IActionResult GetAllEvents()
         {
-            return Ok();
+            if (_context.Events == null)
+            {
+                return NotFound();
+            }
+
+            var response = _context.Events.ToList();
+
+            return Ok(response);
+            
         }
 
         [HttpGet("GetEventById")]
