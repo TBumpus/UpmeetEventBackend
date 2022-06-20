@@ -8,7 +8,6 @@ namespace UpmeetEventBackend.Controllers
     [ApiController]
     public class EventController : ControllerBase
     {
-        EventDb Db = new EventDb();
 
         [HttpGet("GetAllEvents")]
         public IActionResult GetAllEvents()
