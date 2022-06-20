@@ -29,5 +29,6 @@ namespace UpmeetEventBackend.Controllers
             })
             .ToArray();
         }
+        
     }
 }
