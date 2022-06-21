@@ -33,7 +33,7 @@ namespace UpmeetEventBackend.Controllers
        
         public IActionResult GetEventById(int Id)
         {
-            var eventID = _context.Events.Where(x => x.id == Id).ToList();
+            var eventID = _context.Events.Where(x => x.EventId == Id).ToList();
             if (eventID == null)
             {
                 return NotFound();
@@ -57,8 +57,10 @@ namespace UpmeetEventBackend.Controllers
         }
 
         [HttpDelete("RemoveFromFavorites")]
-        public IActionResult RemoveFromFavorites()
+        public IActionResult RemoveFromFavorites(Favorite favorite)
         {
+             _context.Favorites.Remove(favorite);
+            _context.SaveChanges();
             return Ok();
         }
 

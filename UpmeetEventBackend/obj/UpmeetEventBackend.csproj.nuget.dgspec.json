@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tbump\\UpmeetEvent\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj": {}
+    "C:\\Users\\anass\\source\\repos\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tbump\\UpmeetEvent\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj": {
+    "C:\\Users\\anass\\source\\repos\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tbump\\UpmeetEvent\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj",
+        "projectUniqueName": "C:\\Users\\anass\\source\\repos\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj",
         "projectName": "UpmeetEventBackend",
-        "projectPath": "C:\\Users\\tbump\\UpmeetEvent\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj",
-        "packagesPath": "C:\\Users\\tbump\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tbump\\UpmeetEvent\\UpmeetEventBackend\\UpmeetEventBackend\\obj\\",
+        "projectPath": "C:\\Users\\anass\\source\\repos\\UpmeetEventBackend\\UpmeetEventBackend\\UpmeetEventBackend.csproj",
+        "packagesPath": "C:\\Users\\anass\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\anass\\source\\repos\\UpmeetEventBackend\\UpmeetEventBackend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\tbump\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\anass\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
