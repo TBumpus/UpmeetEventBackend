@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using UpmeetEventBackend.Models;
 
 namespace UpmeetEventBackend.Data
@@ -20,8 +21,18 @@ namespace UpmeetEventBackend.Data
                 new Event(5, "Blink-182", "Concert", 89m),
                 new Event(6, "Ann Arbor Art fair", "Craft Fair", 0m)
                 );
+
+            modelBuilder.Entity<User>().HasData(
+                new User(1),
+                new User(2),
+                new User(3)
+                );
         }
 
+       
+
         public DbSet<Event> Events { get; set; }
+        public DbSet<Favorite> Favorites { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

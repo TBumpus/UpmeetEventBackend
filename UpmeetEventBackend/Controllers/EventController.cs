@@ -42,8 +42,11 @@ namespace UpmeetEventBackend.Controllers
         }
 
         [HttpPost("AddEventToFavorites")]
-        public IActionResult AddEventToFavorites()
-        {
+        public IActionResult AddEventToFavorites(Favorite favorite)
+        {         
+            _context.Favorites.Add(favorite);
+            _context.SaveChanges();
+
             return Ok();
         }
 
