@@ -30,9 +30,15 @@ namespace UpmeetEventBackend.Controllers
         }
 
         [HttpGet("GetEventById")]
-        public IActionResult GetEventById()
+       
+        public IActionResult GetEventById(int Id)
         {
-            return Ok();
+            var eventID = _context.Events.Where(x => x.id == Id).ToList();
+            if (eventID == null)
+            {
+                return NotFound();
+            }
+            return Ok(eventID);
         }
 
         [HttpPost("AddEventToFavorites")]
