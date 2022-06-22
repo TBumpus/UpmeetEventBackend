@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using UpmeetEventBackend.Data;
 using UpmeetEventBackend.Models;
 
@@ -65,8 +66,10 @@ namespace UpmeetEventBackend.Controllers
         }
 
         [HttpDelete("RemoveFromFavorites")]
-        public IActionResult RemoveFromFavorites()
+        public IActionResult RemoveFromFavorites(Favorite favorite)
         {
+             _context.Favorites.Remove(favorite);
+            _context.SaveChanges();
             return Ok();
         }
 
