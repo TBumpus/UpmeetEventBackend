@@ -74,8 +74,10 @@ namespace UpmeetEventBackend.Controllers
         }
 
         [HttpPost("AddEvent")]
-        public IActionResult AddEvent()
+        public IActionResult AddEvent(Event newEvent)
         {
+            _context.Events.Add(newEvent);
+            _context.SaveChanges();
             return Ok();
         }
     }
