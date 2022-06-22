@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "localOriginsPolicy",
+    options.AddPolicy(name: "LocalOriginsPolicy",
         builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
         );
 }
